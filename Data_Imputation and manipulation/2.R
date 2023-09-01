@@ -5,6 +5,9 @@ install.packages("mice")
 install.packages("VIM")
 library(plyr)
 library(dplyr)
+#Data cleaning and missing data analysis
+#cleans the "Score.Not.Clean" dataset by replacing specific values with NA to handle missing or incorrect data,
+#Performs missing data analysis using the "missForest" and "VIM" libraries to identify and visualize missing data patterns.
 is.na(Score.Not.Clean)
 names(Score.Not.Clean)
 Score.Not.Clean<- Score.Not.Clean %>%mutate(Final = replace(Final, Final==""|Final=="na"|Final=="n/A",NA))
@@ -19,6 +22,9 @@ md.pattern(df_missing)
 library(VIM)
 aggr(df_missing, col=c('green','yellow'), numbers=TRUE, sortVars=TRUE, labels=names(df_missing), cex.axis=.7, gap=3, ylab=c("Missing data","Pattern"))
 
+#Data manipulation and Analysis
+#Creates a subset of the "Credit" dataset by randomly selecting six rows.
+#Generates various data subsets, transformations, and summary statistics, such as mean values, to analyze the data's characteristics and relationships.
 data <- Credit
 data <-sample_n(data,6)
 df1 <- select(data,c(Cdur,Camt))
