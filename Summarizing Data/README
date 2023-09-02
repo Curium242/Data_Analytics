@@ -4,7 +4,7 @@ This repository contains R code for analyzing the "nycflights13" dataset using t
 
 ## Description
 
-- **Data**: The code loads the "nycflights13" dataset, specifically the "flights" dataset, which contains information about flights departing from New York City in 2013. A sample of 30 rows is randomly selected for analysis.
+- **Data**: The code loads the "nycflights13" dataset, which contains information about flights departing from New York City in 2013. A sample of 30 rows is randomly selected for analysis.
 
 - **Data Summarization**:
   - Three dataframes (`df1`, `df2`, and `df3`) are created to summarize flight information for carriers, flights, and tail numbers, respectively. These summaries include the mean arrival delay for flights with delays exceeding 30 minutes.
