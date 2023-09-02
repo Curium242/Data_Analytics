@@ -1,0 +1,27 @@
+# Linear Regression Analysis in R
+
+This repository contains R code for performing simple and multiple linear regression analysis on the "mtcars" dataset using the "ggplot2" and "dplyr" libraries.
+
+## Description
+
+- **Data**: The code loads the "mtcars" dataset and randomly samples 20 rows for analysis.
+
+- **Simple Linear Regression**:
+  - It performs simple linear regression between the "wt" (weight) and "mpg" (miles per gallon) variables.
+  - Calculates the correlation value between "wt" and "mpg."
+  - Generates a simple linear regression model and provides a summary.
+  - Creates residual plots, a histogram of residuals, and a Q-Q plot for model evaluation.
+
+- **Multiple Linear Regression**:
+  - It extends the analysis to multiple linear regression, considering both "wt" and "gear" variables as predictors.
+  - Provides a summary of the multiple linear regression model.
+  - Generates residual plots, a histogram of residuals, and a Q-Q plot for model evaluation.
+
+## Usage
+
+You can run the R code provided in this repository to perform linear regression analysis on the "mtcars" dataset. Make sure to have the necessary R packages ("ggplot2" and "dplyr") installed.
+
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md).
