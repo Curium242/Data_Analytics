@@ -5,7 +5,7 @@ library(dplyr)
 data <- sample_n(data,20)
 
  install.packages("ggplot2")
-library("ggplot2")     	
+library(ggplot2)     	
 ggplot(data,aes(x=wt,y=mpg))+geom_point() #To plot - wt/gear
 
 cor.test(data$wt,data$mpg)   # to find the correlation value
