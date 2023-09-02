@@ -1,0 +1,22 @@
+# NYC Flights 13 Analysis in R
+
+This repository contains R code for analyzing the "nycflights13" dataset using the "nycflights13" and "dplyr" libraries.
+
+## Description
+
+- **Data**: The code loads the "nycflights13" dataset, specifically the "flights" dataset, which contains information about flights departing from New York City in 2013. A sample of 30 rows is randomly selected for analysis.
+
+- **Data Summarization**:
+  - Three dataframes (`df1`, `df2`, and `df3`) are created to summarize flight information for carriers, flights, and tail numbers, respectively. These summaries include the mean arrival delay for flights with delays exceeding 30 minutes.
+
+- **Data Exploration**:
+  - Basic data exploration is performed, including:
+    - Viewing the dataset.
+    - Summarizing the dataset.
+    - Extracting variable names.
+    - Computing summary statistics (mean, median, variance, standard deviation, maximum, minimum, and quantiles) for the "distance" variable.
+    - Finding the index of the maximum and minimum distances.
+
+## Usage
+
+You can run the R code provided in this repository to perform exploratory data analysis on the "nycflights13" dataset. Make sure to have the necessary R packages ("nycflights13" and "dplyr") installed.
